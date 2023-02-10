@@ -95,7 +95,7 @@ justify-content: center;
     margin:0;
 }
 .projects-section {
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
     margin:0;
     background: var(--background-dark1);
@@ -107,7 +107,7 @@ justify-content: center;
     margin: 0 auto 0 auto;
     border-bottom: 0.2rem solid white;
 }
-.projects-grids{
+.project-tile{
     display:flex;
     flex-direction: row;
     margin: auto;
@@ -115,10 +115,10 @@ justify-content: center;
     justify-content: center;
     overflow:hidden;
 }
-.projects-grids a{
+.project-tile a{
     color:#fff;
 }
-.projects-grids a:hover{
+.project-tile a:hover{
     color:var(--color1);
 }
 .project-card{
