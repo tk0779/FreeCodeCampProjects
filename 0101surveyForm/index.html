@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>FCC-SurveyForm</title>
+</head>
+<body><main>
+
+  <h1 id="title">Kids Creative School Application</h1>
+  <p id="description">get free 30 minutes trial!</p>
+
+  <form action="" id="survey-form">
+    <div id="input1">
+      <label for="name" id="name-label">
+        <p>Student Name</p>
+        <input type="text" id="name" placeholder="   Enter student name">
+      </label>
+      <label for="email" id="email-label">
+        <p>Parent Email</p>
+        <input type="email" id="email" placeholder="   Enter parent email" required></input>
+      </label>
+      <label for="number" id="number-label">
+        <p>Student Age (6-21)</p> 
+        <input type="number" id="number" min="6" max="21" placeholder="   Enter student age">
+      </label>
+      <br>
+      <label for="dropdown">
+        <p>Select your learning</p>
+        <select name="dropdown" id="dropdown">
+          <option value="">Select your interested subject</option>
+          <option value="">Music</option>
+          <option value="">Art</option>
+          <option value="">Coding</option>
+          <option value="">Game</option>
+        </select>
+      </label>
+    </div>
+    <br>
+    <div id="radio">
+      <label for="radio">
+        <p>Select your Type of learning</p>
+        <input type="radio" name="music" id="online">Online
+      </label>
+      <label for="typeoflearning">
+        <input type="radio" name="music" id="atschool">At School
+      </label>
+      
+    </div>
+    <br>
+    <div id="checkbox">
+      <label for="checkbox">
+        <p>Select Music Lessons</p>
+        <input type="checkbox" value="piano" name="" id="">Piano
+        <input type="checkbox" value="guitar" name="" id="">Guitar
+        <input type="checkbox" value="bass" name="" id="">Bass
+        <input type="checkbox" value="drums" name="" id="">Drums
+      </label>
+    </div>
+    <div id="checkbox">
+      <label for="checkbox">
+        <p>Select Art Lesson</p>
+        <input type="checkbox" value="drawing" name="" id="">Drawing
+        <input type="checkbox" value="watercolor" name="" id="">Watercolor
+      </label>
+    </div>
+       <div id="checkbox">
+      <label for="checkbox">
+        <p>Select Coding and Game Lesson</p>
+        <input type="checkbox" value="coding" name="" id="">Coding
+        <input type="checkbox" value="game" name="" id="">Game Creation
+      </label>
+    </div>
+    <hr>
+    <label for="textarea">
+      <p>Please let us know if you have any special need.</p>
+      <textarea name="" id="" cols="30" rows="10"placeholder="please enter your comments"></textarea>
+    </label>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</main>
+<footer>
+  <p>This is freeCodeCamp SurveyForm Project : created by NatTK </p>
+  <p>My Contact : twitter tk0779</p>
+</footer>
+</body>
+</html>
