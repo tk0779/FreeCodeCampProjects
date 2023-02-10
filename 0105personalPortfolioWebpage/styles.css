@@ -1,0 +1,166 @@
+:root {
+  --color1:#e71d36;
+  --background-light1: #52796f;
+  --background-dark1:#e5e5e5;
+  --background-dark2:#324a5f;
+  --textlight1:white
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color:var(--color1)
+}
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg,var(--background-dark1),var(--background-dark2));
+    margin-bottom: 0;
+}
+#welcome-section h1{
+    color:white;
+    font-size: 3.5rem;
+}
+#welcome-section p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+    color:var(--color1);
+    text-align:center;
+}
+#welcome-section a{
+    color:var(--color1);
+}
+#welcome-section a:hover{
+    color:#fff;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  background-color: var(--color1);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  font-weight: 100;
+  z-index: 1;
+}
+@media only screen and (max-width: 600px) {
+    #navbar {
+      justify-content: center;
+    }
+    h1{
+        font-size: 2rem
+    }
+    #welcome-section h1{
+        font-size: 2.5rem;
+    }
+    #welcome-section p{
+        font-size: 1rem
+    }
+  }
+.navlink , .navlink a{
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:5px ;
+    margin-right: 20px;
+    color:var(--textlight1);
+    text-decoration: none;
+    font-size: large;
+
+}
+.navlink ul {
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+  margin:0;
+}
+.navlink li{
+    list-style: none;
+    margin:0;
+}
+.projects-section {
+    height: 100%;
+    text-align: center;
+    margin:0;
+    background: var(--background-dark1);
+    display: flex;
+    flex-direction: column;
+}
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 0 auto;
+    border-bottom: 0.2rem solid white;
+}
+.projects-grids{
+    display:flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow:hidden;
+}
+.projects-grids a{
+    color:#fff;
+}
+.projects-grids a:hover{
+    color:var(--color1);
+}
+.project-card{
+    display:block;
+    margin: 20px;
+    width: 300px;
+    background-color: var(--background-dark2);
+    color:#fff;
+    font-size: small;
+}
+.project-card img{
+    position:relative;
+    width: 100%;
+    filter:saturate(50%);
+    height: 175px;
+    object-fit: cover;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg,var(--background-dark1),var(--background-dark2));
+    margin-bottom: 0;
+}
+#contact a{
+    text-align: center;
+    color:#fff;
+}
+#contact a:hover{
+    color:var(--color1)
+}
+footer{
+    background-color: #000;
+    width: 100vw;
+    height: 100px;
+    color: grey;
+    font-size:15px;
+    text-align: center;
+    padding-top: 10px;
+}
+footer p{
+margin:0;}
